@@ -1,0 +1,373 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Studio Code</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main-header {
+            background-color: #2c2c32;
+            /* position: fixed; */
+            overflow: hidden;
+            padding: 0px 80px;
+   
+
+        }
+        .main-h1 {
+            color: #f2ffff;
+            font-weight: 500;
+            font-size: 20px;
+            padding-left: 15px;
+            line-height: 25px;
+            float: left;
+            margin-top: 10px;
+    
+        }
+        .vscode-icon {
+            width: 25px;
+            height: 25px;
+            float: left;
+            margin-top: 10px;
+        }
+        .main-popup {
+            background-color: #25252b;
+
+ 
+            color: #f2ffff;
+            font-size: 17px;
+            font-weight: 90;
+            text-align: center;
+            padding: 10px;
+        }
+        .main-section {
+            background-color: #2c2c32;
+            overflow: hidden;
+            padding: 50px;
+        }
+        .main-h2 {
+            color: #f2ffff;
+            font-weight: 200;
+            font-size: 50px;
+        }
+        .redefine {
+            color: #f2ffff;
+            font-weight: 600;
+            font-size: 50px;
+        }
+        .main-a {
+            color: #0079ad;
+        }
+        .main-a:hover {
+            text-decoration: none;
+        }
+        .main-left {
+            float: left;
+            text-align: center;
+        }
+        .main-img {
+            /* width: ;
+            float: right; */
+            padding: 50px;
+        }
+        .main-p {
+            color: #ababad;
+            margin: 20px 0;
+        }
+        .main-down-box-cover {
+            overflow: hidden;
+            
+        }
+        .main-down-box {
+            background-color: #0066b8;
+            color: #f2ffff;
+            padding: 10px;
+            width: 220px;
+            margin: 0 auto;
+            float: left;
+        }
+        .main-down-box-side {
+            background-color: #0066b8;
+            color: #f2ffff;
+            padding: 10px;
+            width: 50px;
+            height: 42px;
+            margin: 0 auto;
+            float: left;
+            margin-left: 2px;
+            font-size: 40px;
+            line-height: 30px;
+            font-weight: 1;
+        }
+        .main-down-box:hover {
+            background-color: #00588b;
+        }
+        .main-down-box-side:hover {
+            background-color: #00588b;
+        }
+        .download-window {
+            font-weight: 600;
+        }
+        .stable-build {
+            
+        }
+        .navigation {
+            overflow: hidden;
+            float: left;
+            margin-left: 20px;
+            line-height: 10px;
+            margin-top: 10px;
+        }
+        .nav-unit {
+            color: #79797d;
+            list-style-type: none;
+            float: left;
+            padding: 10px;
+            font-weight: 400;
+        }
+        .nav-unit:hover {
+            color: white;
+        }
+        .input-text {
+            background-color: #3d3d42;
+            border: 1px solid black;
+            height: 50px;
+            border-radius: 0;
+        }
+        .input-text {
+            float: right;
+        }
+        .nav-down-box {
+            float: right;
+            background-color: #0066b8;
+            height: 50px;
+            color: #fffffd;
+            font-weight: 600;
+            text-align: center;
+            line-height: 50px;
+            padding: 0px 20px;
+        }
+        .nav-down-box:hover {
+            background-color: #00588b;
+        }
+        .input-text:hover {
+            background-color: #afb7bd;
+        }
+        .input-text {
+            color: #fffffd;
+            font-weight: 100;
+            text-align: center;
+        }
+        .box-link {
+            color: #188add;
+            text-decoration: none;
+        }
+        .box-link:hover {
+            text-decoration:underline;
+        }
+        .middle-box {
+            background-color: #25252b;
+            border-radius: 15px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .last-box {
+            margin-top: 10px;
+            color: #afb7bd;
+            font-size: 12px;
+        }
+        .last-text {
+            color: #188add;
+            text-decoration: none;
+        }
+        .last-text:hover {
+            text-decoration: underline;
+        }
+        .down-list {
+            width: 320px;
+            height: 200px;
+            background-color: #f2f2f2;
+            /* z-index: 100; */
+            display: none;
+            border: 2px solid #00588b;
+            /* clear: left; */
+            position: absolute;
+          
+        }
+        .down-list-cover {
+            clear: left;
+            /* position: relative; */
+        }
+        td {
+            padding: 6px;
+        }
+        .align-right {
+            text-align: right;
+        }
+        .right-cell {
+            background-color: #e3e3e3;
+           
+        }
+        .two-row {
+            border-bottom: 1px solid #e3e3e3;
+        }
+        .png-center {
+            text-align: center;
+        }
+        .img-left-cover {
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .img-left {
+            float: left;
+            padding: 20px 100px;
+      
+        }
+        .img-left:hover {
+            background-color: rgba(146, 142, 142,0.1);
+            
+        }
+        .clear {
+            clear: left;
+        }
+        .img-text {
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+        /* .main-cover {
+            position: fixed;
+        } */
+    </style>
+  
+</head>
+<body>
+    <div class="main-cover">
+    <header class="main-header">
+        <img class="vscode-icon"src="Visual_Studio_Code_1.35_icon.svg.png" alt="vscode_icon">
+        <h1 class="main-h1">Visual Studio Code</h1>
+        <nav class="navigation">
+            <ul>
+                <li class="nav-unit">Docs</li>
+                <li class="nav-unit">Updates</li>
+                <li class="nav-unit">Blog</li>
+                <li class="nav-unit">API</li>
+                <li class="nav-unit">Extensions</li>
+                <li class="nav-unit">FAQ</li>
+                <li class="nav-unit">Learn</li>
+            </ul>
+        </nav>
+        <form action="#">
+            <div class="header-right">
+                <div class="nav-down-box">Download</div>
+                <input type="text" class="input-text" placeholder="Search Docs">
+                
+            </div>
+            
+            
+        </form>
+    </header>
+    </div>
+    <div class="main-popup">
+        <a href="#" class="main-a">Version 1.80</a> is now available! Read about the new features and fixes from June. 
+    </div>
+    <section class="main-section">
+        <div class="main-left">
+            <h2 class="main-h2">Code editing. <br><span class="redefine">Redefined.</span></h2>
+            <p class="main-p">Free. Built on open source. Runs everywhere.</p>
+            <div class="main-down-box-cover">
+                <div class="main-down-box"><span class="download-window">Download for Windows</span><br><span class="stable-build">Stable Build</span></div>
+                <div class="main-down-box-side">∨</div>
+                <div class="down-list-cover">
+                    <div class="down-list">
+                        <table >
+                            <tr>
+                                <td colspan="3" class="align-right">Stable</td>
+                                
+                                <td class="right-cell">Insiders</td>
+                            </tr>
+                            <tr>
+                                <td class="two-row"><b>macOS</b></td>
+                                <td class="two-row">Universal</td>
+                                <td class="two-row png-center"><img src="Icons8_flat_download.svg.png" alt="blue" width="15px" height="15px"></td>
+                                <td class="right-cell two-row png-center"><img src="download-1459070_1280.webp" alt="blue" width="15px" height="15px"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="two-row"><b>Windows x64</b></td>
+                                <td class="two-row">User Installer</td>
+                                <td class="two-row png-center"><img src="Icons8_flat_download.svg.png" alt="blue" width="15px" height="15px"></td>
+                                <td class="right-cell two-row png-center"><img src="download-1459070_1280.webp" alt="blue" width="15px" height="15px"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Linux x64</b></td>
+                                <td>.deb</td>
+                                <td class="two-row png-center"><img src="Icons8_flat_download.svg.png" alt="blue" width="15px" height="15px"></td>
+                                <td class="right-cell two-row png-center"><img src="download-1459070_1280.webp" alt="blue" width="15px" height="15px"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="two-row align-right">.rpm</td>
+                                
+                                <td class="two-row png-center"><img src="Icons8_flat_download.svg.png" alt="blue" width="15px" height="15px"></td>
+                                <td class="right-cell two-row png-center"><img src="download-1459070_1280.webp" alt="blue" width="15px" height="15px"></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="middle-box">
+                <a href="#" class="box-link">Web</a>, <a href="#" class="box-link">Insiders edition</a>, <span style="color: #eaeaeb;">or</span> <a href="#" class="box-link">other platforms</a> 
+            </div>
+            <div class="last-box">
+                By using VS Code, you agree to its<br>
+                <a class="last-text" href="#">license and privacy statement.</a>
+            </div>
+        </div>
+        <img class="main-img" src="main_img.PNG" alt="main-img">
+    </section>
+        
+        
+    <section>
+        <div class="img-left-cover">
+            <div class="img-left">
+                <img src="jeeeongu.png" alt="jjeongu" width="100px" height="100px">
+                <p class="img-text">IntelliSense</p>
+            </div>
+            <div class="img-left"> 
+                <img src="debug-icon-16.jpg" alt="jjeongu" width="100px" height="100px">
+                <p class="img-text">Run and Debug</p>
+            </div>
+            <div class="img-left">
+                <img src="git.png" alt="jjeongu" width="100px" height="100px">
+                <p class="img-text">Built-in Git</p>
+            </div>
+            <div class="img-left">
+                <img src="exten.png" alt="jjeongu" width="100px" height="100px">
+                <p class="img-text">Extensions</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <script>
+        var toggle = true;
+        var dl = document.getElementsByClassName('main-down-box-side');
+            dl[0].onclick = function() {
+                var ol = document.getElementsByClassName('down-list');
+                if(toggle == true) {
+                    ol[0].style.display = 'block';
+                    toggle = false;
+                } else {
+                    ol[0].style.display = 'none';
+                    toggle = true;
+                }
+                
+            }
+    </script>
+</body>
+</html>
